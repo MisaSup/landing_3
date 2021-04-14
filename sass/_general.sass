@@ -1,0 +1,511 @@
+html, body
+  height: 100%
+
+header
+  position: relative
+  overflow: visible
+
+nav
+  position: fixed 
+  top: 0
+  left: 0
+  background: #212121
+  width: 100%
+  z-index: 7
+
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  padding: 14px 70px
+  margin: 0
+  list-style: none
+
+  .menu_item
+    border-right: 3px dotted black
+    padding-right: 38px
+
+    &:last-child
+      border: none
+
+  .menu_link
+    /* font-family: Roboto;
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+
+    /* line-height: 15px;
+    text-decoration: none
+    color: #FFFFFF
+.hamburger
+  display: none
+.subheader
+  position: absolute
+  width: 100%
+  background: rgba(0, 0, 0, 0.6)
+  margin-top: 52px
+  padding: 20px 0
+  height: 87px
+
+  .logo_txt
+    min-width: 100%
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    opacity: 0.6
+    color: #FFFFFF
+
+  .call_us
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: right
+    color: #FFFFFF
+
+  .number
+    display: block
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    text-align: right
+    text-transform: uppercase
+    text-decoration: none
+    color: #FFFFFF
+
+  .place_call
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border-style: none
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    padding: 13px 17px
+    @include btn_hover
+    
+
+/* section promo
+
+.promo_wrap
+  background: url(../img/1section_bg.jpg) center (center / cover) no-repeat
+  padding: 151px 0 185px 0
+  min-height: 799px
+
+.promo_header
+  font-style: normal
+  font-weight: 900
+  font-size: 60px
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+
+.promo_subheader
+  font-style: normal
+  font-weight: 700
+  font-size: 36px
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+
+.promo_descr
+  margin-top: 25px
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  text-align: center
+  color: #FFFFFF
+
+.promo_btn
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+  border-radius: 4px
+  border-style: none
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 63px
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+  display: block
+  padding: 0 24px
+  margin: 0 auto
+  margin-top: 116px
+  @include btn_hover
+
+/* SECTION ADV
+
+.advantage
+  min-height: 849px
+  padding: 18px 37px 64px 37px
+
+.advantage_h1, .label
+  display: block
+  width: 113px
+  height: 24px
+  margin: 0 auto
+  font-style: normal
+  font-weight: normal
+  font-size: 11px
+  line-height: 11px
+  text-transform: uppercase
+  text-align: center
+  padding-top: 6px
+  color: #FFFFFF
+  mix-blend-mode: normal
+  background-color: black
+
+.advantage_subtitle, .title
+  margin-top: 33px
+  font-style: normal
+  font-weight: bold
+  font-size: 38px
+  text-transform: uppercase
+  text-align: center
+  color: #222222
+
+.advantage_grid_item
+  margin-top: 30px
+
+.adv_circle
+  background: #1EACC7
+  display: flex
+  align-items: center
+  justify-content: center
+
+  /* flex-basis: 230px;
+  width: 116px
+  height: 116px
+  border-radius: 50%
+
+.adv_txt
+  margin-left: 25px
+  font-style: normal
+  font-weight: 300
+  font-size: 15px
+  line-height: 21px
+
+  .txt_blue
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: #1EACC7
+
+/* SECTION MOBILE
+
+.mobile
+    min-height: 864px
+    padding: 46px 0 80px 0
+
+    &_txt
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      text-align: center
+
+      color: #222222
+
+    &_cards
+      margin-top: 30px    
+    &_cards:last-child
+      margin-top: 19px
+
+    &_cards_item
+      height: 280px
+      width: 320px
+      padding: 88px 0 34px 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      div
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+      
+      button 
+        width: 29px
+        height: 29px
+        background: #000000
+        border: none
+        border-radius: 100%
+        align-self: center
+        padding: 7px
+        position: relative
+        &::before
+          content: ''
+          display: block
+          width: 14px
+          height: 2px
+          background-color:#1EACC7 
+          transition: 0.3s all
+        &::after
+          position: absolute
+          left: 45%
+          transform: translateY(-52%)
+          display: block
+          content: ''
+          display: block
+          width: 2px
+          height: 14px
+          background-color:#1EACC7
+          transition: 0.3s all
+        &:hover
+          &:before, &::after
+             background-color:#f78d03
+                 
+    &_cards_item:first-child
+      background: url(../img/card_1.jpg) center center/cover no-repeat
+      padding-top: 83px
+    &_cards_item:nth-child(2)
+      background: url(../img/card_2.jpg) center center/cover no-repeat
+    &_cards_item:last-child
+      background: url(../img/card_3.jpg) center center/cover no-repeat
+
+    &_cards_item.second_row:first-child
+      background: url(../img/card_4.jpg) center center/cover no-repeat
+    &_cards_item.second_row:nth-child(2)
+      background: url(../img/card_5.jpg) center center/cover no-repeat
+    &_cards_item.second_row:last-child
+      background: url(../img/card_6.jpg) center center/cover no-repeat
+      padding-top: 83px
+      
+
+// SECTION CAR
+
+.car
+  height: 502px + 397px
+  .bg_darkblue
+    height: 502px
+    background: #070716
+    padding-top: 60px
+    overflow: visible
+    .container
+      position: relative
+      overflow: visible
+      img 
+        position: absolute
+        left:50%
+        transform: translateX(-50%)
+        top: 175px
+  &_opportunity
+      color: #070716
+      background-color: white
+  &_choise
+    color: #FFFFFF
+    margin-top: 27px
+  &_txt
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    text-align: center
+    color: #FFFFFF  
+  .bg_white
+    height: 397px
+    padding: 210px 0 138px 0
+    &_txt
+      font-style: normal
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px     
+      text-align: center
+
+      color: #222222
+
+
+// SECTION CONDITIONS
+
+.conditions 
+  min-height: 917px
+  padding: 66px 0 87px 0
+  &_head
+    margin-top: 28px
+  &_row
+    margin-top: 35px  
+  &_row:last-child
+    margin-top: 60px
+  &_title_blue
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    color: #1CA8C3 
+  &_title_red
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    color:  #FF5656
+  &_list
+    margin-top: 22px
+    font-style: normal
+    font-weight: 300
+    padding-left: 50px
+    li
+      overflow: visible
+      position: relative
+      margin-bottom: 7px
+      font-size: 17px
+      line-height: 24px
+      list-style-type: none
+      color: #222222
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 2px  
+        width: 21px
+        height: 20px
+        background: url(../svg/check_blue.svg) center center/cover no-repeat
+  &_descr
+    font-style: normal
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+  .red_check li
+      &::before
+        background: url(../svg/check_red.svg) center center/cover no-repeat  
+
+// SECTION AROUD THE WORLD
+
+.around_w
+  background-color: #080810
+  min-height: 720px
+  .bg_map
+    background: url(../img/world_bg.jpg) center center/cover no-repeat
+    min-height: 720px
+    padding: 48px 0 0 0
+    .label
+      color: #070716
+      background-color: white
+    .title
+      color: #FFFFFF
+      margin-top: 27px
+    a 
+      display: block
+      position: relative
+      bottom: -475px
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      text-align: center
+      text-transform: uppercase
+      color: #1FBAD6
+      text-decoration: none
+      transition: 0.1s all 
+      &:hover
+        font-size: 16px
+        color: #31d6f3
+  &_descr
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    text-align: center
+    color: #FFFFFF
+
+//  FOOTER
+
+footer
+  min-height: 155px
+  padding: 49px 50px 40px 50px
+  position: relative
+  .blue_line
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      top: -35px
+      left: 39%
+      width: 300px
+      height: 5px
+      background-color: #1FBAD6
+  .links
+    &_first
+      // flex-wrap: nowrap
+      &_item
+        font-style: normal
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+        text-decoration: none
+        text-align: center
+        white-space: nowrap
+        &:hover
+          font-weight: 400
+    &_second
+      flex-wrap: nowrap
+      margin-top: 15px
+      &_item
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        white-space: nowrap
+        text-align: center
+        color: #999999
+        text-decoration: none
+        &:hover
+          color: #616161
+        &:first-child
+          text-align: left
+    &_lang button
+      border: none
+      background: none
+      width: auto
+      margin-top: 19px
+      text-transform: uppercase
+      font-style: normal
+      font-weight: normal
+      font-size: 11px
+      color: #1FBAD6
+      &:hover
+        color: #19a1b9
+
+  .sm_rounds
+    position: absolute
+    display: flex
+    justify-content: space-around
+    width: (35px + 5px) * 4
+    top: 50px
+    left: 50px
+    &_item
+      // display: flex
+      // justify-content: center
+      // align-items: center
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      background-color: #070716
+      a 
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 100%
+        text-decoration: none
+        i
+          color: white
+         
+
+  .badges
+    position: absolute
+    right: 50px
+    top: 50px
+    img
+      width: 100px
+      max-height: 30px
+      &:last-child
+        border-radius: 12%
+     

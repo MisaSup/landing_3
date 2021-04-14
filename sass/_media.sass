@@ -1,0 +1,231 @@
+@media screen and (max-width: 1200px)
+    .menu
+        .menu_item
+            padding-right: 20px 
+        .menu_link
+            font-size: 13px 
+    .subheader .place_call
+        font-size: 11px
+    .promo_header
+        font-size: 50px
+    .adv_circle
+        width: 80px
+        height: 80px
+        .adv_icon
+           width: 90%
+    .mobile_cards
+        &_item
+            width: 275px
+            div
+                font-size: 22px
+    footer
+        .badges
+            display: flex
+            flex-direction: column          
+        .blue_line
+            &::before
+                transform: translateX(-17%)
+        .links
+            &_first
+                &_item
+                    font-size: 12px
+                    white-space: nowrap    
+
+@media screen and ( max-width: 991px )
+    .menu
+        .menu_item
+            padding-right: 6px 
+        .menu_link
+            font-size: 11px 
+    .logo_uber
+        img
+            width: 100%
+    .subheader .logo_txt
+        font-size: 11px
+    .subheader .number
+        font-size: 21px
+    .subheader .place_call
+        padding: 5px 17px
+    .promo_header
+        font-size: 40px
+    .promo_subheader
+        font-size: 26px
+    .advantage_subtitle, .title
+        font-size: 36px
+    .adv_circle
+        width: 70px
+        height: 70px
+        .adv_icon
+           width: 90%
+    .adv_txt
+        margin-left: 0
+    .mobile_cards
+        &_item
+            width: 230px
+            div
+                font-size: 18px
+    footer
+        .badges
+            display: flex
+            flex-direction: column
+        .blue_line
+            &::before
+                transform: translateX(-25%)
+        .links
+            &_first
+                &_item
+                    font-size: 12px
+                    white-space: nowrap
+            &_second
+                flex-wrap: wrap        
+
+@media screen and ( max-width:767px )
+    nav 
+        height: 52px
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(21, 21, 21, 0.6)
+            transition: 1s all
+            &_active
+                left: 0
+            .menu_item
+                padding-right: 0
+                border: none 
+                margin: 10px 0
+                width: 100%
+                text-align: center
+                padding: 5px 0
+            .menu_link
+                display: inline-block
+                font-size: 20px 
+                width: 100%
+    .hamburger
+        display: block
+        position: absolute
+        right: 11px
+        top: 50%
+        width: 26px
+        height: 10px
+        transition: 0.8 all
+        span
+            margin-bottom: 2px
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            transition: 0.3s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:first-child
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: rotate(45deg  )
+    .logo_uber
+        display: block
+        margin-top: 10px           
+    .logo_txt
+        display: none
+    .subheader .number
+        font-size: 14px
+        text-align: center
+    .subheader .place_call
+        display: block
+        margin: 0 auto
+    .advantage_subtitle, .title 
+        font-size: 25px
+    .advantage_grid_item
+        flex-direction: column
+        align-items: center
+        .adv_circle
+            width: 116px
+            height: 116px
+        .adv_txt
+            margin-top: 24px
+    .mobile_cards
+        &_item
+            width: 165px
+            height: 235px
+    .car_img
+        width: 100%
+    footer 
+        .links_second_item
+            &:first-child
+                text-align: center
+        .links_lang 
+            button
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+        .blue_line
+            &::before
+                 width: 700px
+                 left: 0
+@media screen and ( max-width: 575px  )
+    nav
+        .menu
+            width: 80%
+            .menu_link
+                font-size: 18px
+    .subheader
+        height: 62px
+        padding: 10px 0
+        .number
+            font-size: 12px
+        .place_call
+            padding: 5px 8px
+            font-size: 10px
+    .promo_wrap
+        min-height: 339px   
+        padding-bottom: 34px
+    .promo_header
+        font-size: 35px
+    .promo_subheader
+        font-size: 22px
+        margin-top: 34px
+    .advantage_subtitle, .title
+        font-size: 23px
+    .mobile
+        padding-bottom: 0
+    .mobile_cards
+        &:last-child
+            margin-top: 5px
+        &_item
+            width: 320px
+            height: 235px
+            margin-top: 5px
+    .advantage
+        padding: 18px 0 10px 0
+        &_grid .row
+            margin-left: 0px
+        .adv_txt
+            text-align: center
+    .car
+        height: 650px
+        .bg_white
+            height: 200px
+            padding: 50px 0 0 0
+    footer
+        .blue_line
+            &::before
+                 width: 100%
+                 left: 54px
+        .badges
+            display: flex
+            flex-direction: row
+            right: 10px
+            bottom: 5px
+            top: auto
+        .sm_rounds
+            flex-direction: column-reverse
+            left: 15px
